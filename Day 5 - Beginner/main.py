@@ -9,3 +9,5 @@ for number in range(0, 3):
     print(fruits[number])
 for number in range(0, 14, 3):
     print(number)
+for number in range(2):
+    print(number)
