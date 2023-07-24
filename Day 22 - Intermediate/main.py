@@ -38,11 +38,9 @@ while game_is_on:
     ball.check_bounce_paddle(paddle_right)
     ball.check_bounce_paddle(paddle_left)
     if ball.check_hit_left_wall(SCREEN_WIDTH):
-        print("Right score")
         ball.reset_ball(1)
         score_board.update_score(0, 1)
     if ball.check_hit_right_wall(SCREEN_WIDTH):
-        print("Left score")
         ball.reset_ball(-1)
         score_board.update_score(1, 0)
     game_is_on = score_board.check_winner()
