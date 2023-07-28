@@ -1,0 +1,5 @@
+Hello world
+
+London is the capital of Great Britain
+Thx for attention.
+New text line.
