@@ -11,3 +11,6 @@ class BodyPart:
 
     def distance(self, food):
         return self.body.distance(food)
+
+    def goto(self, x, y):
+        self.body.goto(x, y)

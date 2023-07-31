@@ -28,7 +28,7 @@ game_is_on = True
 while game_is_on:
     snake.move_snake()
     screen.update()
-    time.sleep(0.1)
+    time.sleep(0.25)
     if snake.head.distance(food) < 15:
         food.goto_random_point()
         snake.increase_snake_size()
