@@ -28,7 +28,16 @@
 # print(8 // 3)               # 2
 # print(8 % 5)                # 3
 
-score = 0
-height = 1.8
-isWinning = True
-print(f"Your values are:\nscore = {score}\nheight = {height}\nisWinning = {isWinning}")
+import pandas as pd
+from io import StringIO
+
+data = """Exchange ID;ExchangeRate;Exchange Currency
+1;1;USD
+2;0,75;GBP
+3;0,85;EUR
+4;3,67;AED
+5;1,3;AUD"""
+df = pd.read_csv(StringIO(data), sep=';')
+
+# Return the transformed dataframe
+df
