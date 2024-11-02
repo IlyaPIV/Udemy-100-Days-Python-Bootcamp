@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     random_number = random.randint(1, 100)
     current_year = datetime.datetime.now().year
-    return render_template("index.html", random_num=random_number, year=current_year)
+    return render_template("contact.html", random_num=random_number, year=current_year)
 
 
 @app.route('/guess/<name>')
