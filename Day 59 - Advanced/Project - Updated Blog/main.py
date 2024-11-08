@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     header_title = 'Home'
-    return render_template("index.html", header_title=header_title, all_posts=posts)
+    return render_template("contact.html", header_title=header_title, all_posts=posts)
 
 @app.route('/about')
 def about():
