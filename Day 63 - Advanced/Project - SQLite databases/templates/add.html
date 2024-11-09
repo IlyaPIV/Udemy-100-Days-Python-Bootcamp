@@ -1,0 +1,19 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Add Book{% endblock %}
+
+{% block content %}
+    <form action="{{ url_for('add')}}" method="POST">
+        {{ form.hidden_tag() }}
+        <div class="form-group">
+            {{ form.book_name.label }} {{ form.book_name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.author.label }} {{ form.author(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.rating.label }} {{ form.rating(class="form-control") }}
+        </div>
+        {{ form.submit(class="btn btn-primary") }}
+    </form>
+{% endblock %}
